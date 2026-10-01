@@ -1,0 +1,96 @@
+A:leaf3# show network-instance default protocols bgp routes evpn route-type 1 esi 00:11:11:11:11:11:11:00:00:01 detail
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Show report for the EVPN routes in network-instance  "default"
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Route Distinguisher: 10.0.1.1:100
+Tag-ID             : 4294967295
+ESI                : 00:11:11:11:11:11:11:00:00:01
+neighbor           : 10.0.0.1
+path-id            : 0
+Received paths     : 1
+  Path 1: <Best,Valid,Used,>
+    ESI                   : 00:11:11:11:11:11:11:00:00:01
+    Label                 : -
+    Route source          : neighbor 10.0.0.1 (last modified 12m15s ago)
+    Route preference      : No MED, LocalPref is 100
+    Atomic Aggr           : false
+    BGP next-hop          : 10.0.1.1
+    AS Path               :  i [65100]
+    Domain Path           : None
+    Communities           : [target:65500:100, esi-label:0/All-Active/Anycast, bgp-tunnel-encap:VXLAN]
+    RR Attributes         : Originator-ID 10.0.1.1, Cluster-List is [10.0.0.1]
+    Aggregation           : None
+    Unknown Attr          : None
+    Invalid Reason        : None
+    Tie Break Reason      : none
+    Route Flap Damping    : None
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Route Distinguisher: 10.0.1.1:100
+Tag-ID             : 4294967295
+ESI                : 00:11:11:11:11:11:11:00:00:01
+neighbor           : 10.0.0.2
+path-id            : 0
+Received paths     : 1
+  Path 1: <Valid,>
+    ESI                   : 00:11:11:11:11:11:11:00:00:01
+    Label                 : -
+    Route source          : neighbor 10.0.0.2 (last modified 12m11s ago)
+    Route preference      : No MED, LocalPref is 100
+    Atomic Aggr           : false
+    BGP next-hop          : 10.0.1.1
+    AS Path               :  i [65100]
+    Domain Path           : None
+    Communities           : [target:65500:100, esi-label:0/All-Active/Anycast, bgp-tunnel-encap:VXLAN]
+    RR Attributes         : Originator-ID 10.0.1.1, Cluster-List is [10.0.0.2]
+    Aggregation           : None
+    Unknown Attr          : None
+    Invalid Reason        : None
+    Tie Break Reason      : peer-ip
+    Route Flap Damping    : None
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Route Distinguisher: 10.0.1.2:100
+Tag-ID             : 4294967295
+ESI                : 00:11:11:11:11:11:11:00:00:01
+neighbor           : 10.0.0.1
+path-id            : 0
+Received paths     : 1
+  Path 1: <Best,Valid,Used,>
+    ESI                   : 00:11:11:11:11:11:11:00:00:01
+    Label                 : -
+    Route source          : neighbor 10.0.0.1 (last modified 12m15s ago)
+    Route preference      : No MED, LocalPref is 100
+    Atomic Aggr           : false
+    BGP next-hop          : 10.0.1.2
+    AS Path               :  i [65100]
+    Domain Path           : None
+    Communities           : [target:65500:100, esi-label:0/All-Active/Anycast, bgp-tunnel-encap:VXLAN]
+    RR Attributes         : Originator-ID 10.0.1.2, Cluster-List is [10.0.0.1]
+    Aggregation           : None
+    Unknown Attr          : None
+    Invalid Reason        : None
+    Tie Break Reason      : none
+    Route Flap Damping    : None
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Route Distinguisher: 10.0.1.2:100
+Tag-ID             : 4294967295
+ESI                : 00:11:11:11:11:11:11:00:00:01
+neighbor           : 10.0.0.2
+path-id            : 0
+Received paths     : 1
+  Path 1: <Valid,>
+    ESI                   : 00:11:11:11:11:11:11:00:00:01
+    Label                 : -
+    Route source          : neighbor 10.0.0.2 (last modified 12m11s ago)
+    Route preference      : No MED, LocalPref is 100
+    Atomic Aggr           : false
+    BGP next-hop          : 10.0.1.2
+    AS Path               :  i [65100]
+    Domain Path           : None
+    Communities           : [target:65500:100, esi-label:0/All-Active/Anycast, bgp-tunnel-encap:VXLAN]
+    RR Attributes         : Originator-ID 10.0.1.2, Cluster-List is [10.0.0.2]
+    Aggregation           : None
+    Unknown Attr          : None
+    Invalid Reason        : None
+    Tie Break Reason      : peer-ip
+    Route Flap Damping    : None
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

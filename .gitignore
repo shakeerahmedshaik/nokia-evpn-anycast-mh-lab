@@ -1,0 +1,4 @@
+# containerlab runtime directory (node certs, generated configs, local users)
+clab-*/
+*.bak
+.clab-*

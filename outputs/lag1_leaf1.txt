@@ -1,0 +1,22 @@
+A:leaf1# info interface lag1
+    admin-state enable
+    vlan-tagging true
+    subinterface 0 {
+        type bridged
+        vlan {
+            encap {
+                untagged {
+                }
+            }
+        }
+    }
+    lag {
+        lag-type lacp
+        lacp {
+            interval FAST
+            lacp-mode ACTIVE
+            admin-key 11
+            system-id-mac 00:00:00:00:00:11
+            system-priority 11
+        }
+    }

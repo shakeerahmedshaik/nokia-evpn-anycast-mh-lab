@@ -1,0 +1,21 @@
+A:leaf3# show network-instance default protocols bgp routes ipv4 prefix 12.12.12.12/32
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Show report for the BGP routes to network "12.12.12.12/32" network-instance  "default"
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Network: 12.12.12.12/32
+Received Paths: 2
+  Path 1: <Best,Valid,Used,>
+    Route source    : neighbor 172.16.13.0
+    Route Preference: MED is -, No LocalPref
+    BGP next-hop    : 172.16.13.0
+    Path            :  i [65100, 65001]
+    Communities     : None
+  Path 2: <Best,Valid,Used,>
+    Route source    : neighbor 172.16.23.0
+    Route Preference: MED is -, No LocalPref
+    BGP next-hop    : 172.16.23.0
+    Path            :  i [65100, 65001]
+    Communities     : None
+Path 2 was advertised to: 
+[ 172.16.23.0 ]
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
